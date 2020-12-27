@@ -1,0 +1,12 @@
+program: train_cifar.py
+method: bayes
+metric:
+  name: loss
+  goal: minimize
+parameters:
+  att:
+    values: ["ECA", "CBAM", "SE", "Triplet"]
+  optimizer:
+    values: ["adam", "sgd"]
+  batch_size:
+    values: [64, 128, 256]
