@@ -25,6 +25,8 @@
         <img src="https://img.shields.io/badge/WandB-Report2-yellow.svg" /></a>
     <a href="https://github.com/BangguWu/ECANet" alt="Report">
         <img src="https://img.shields.io/badge/Official-Repository-black.svg" /></a>
+    <a href="https://blog.paperspace.com/attention-mechanisms-in-computer-vision-ecanet/" alt="Report">
+        <img src="https://img.shields.io/badge/Paperspace-Blog-white.svg" /></a>
 </p>
 
 <p align="center">
