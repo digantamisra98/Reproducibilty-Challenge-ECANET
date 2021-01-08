@@ -62,8 +62,6 @@ parser.add_argument('--seed', default=None, type=int, nargs='+',
                     help='seed for initializing training. ')
 parser.add_argument('--gpu', default=None, type=int,
                     help='GPU id to use.')
-parser.add_argument('--ksize', default=None, type=list,
-                    help='Manually select the eca module kernel size')
 parser.add_argument('--action', default='', type=str,
                     help='other information.')
 parser.add_argument('--project', defaut=None, type=str,
@@ -100,13 +98,10 @@ def main():
     # create model
     if args.pretrained:
         print("=> using pre-trained model '{}'".format(args.arch))
-        model = models.__dict__[args.arch](k_size=args.ksize, pretrained=True)
+        model = models.__dict__[args.arch](pretrained=True)
     else:
         print("=> creating model '{}'".format(args.arch))
-        if args.ksize == None:
-            model = models.__dict__[args.arch]()
-        else:
-            model = models.__dict__[args.arch](k_size=args.ksize)
+        model = models.__dict__[args.arch]()
 
     if args.gpu is not None:
         model = model.cuda(args.gpu)
