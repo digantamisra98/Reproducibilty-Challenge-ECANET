@@ -2,7 +2,6 @@
 <p align="center">CVPR 2020 <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.html" target="_blank">(Official Paper)</a></p>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/acbadge.gif" width = 20 />
     <a href="http://hits.dwyl.com/digantamisra98/Reproducibilty-Challenge-ECANET" alt="HitCount">
         <img src="http://hits.dwyl.com/digantamisra98/Reproducibilty-Challenge-ECANET.svg" /></a>
     <a href="https://arxiv.org/abs/1910.03151" alt="ArXiv">
@@ -90,7 +89,7 @@ pip install -e "/path_to_Echo/"
         <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
         <a href="https://wandb.ai/diganta/ECANet-sweep/sweeps/z61h01i4?workspace=user-diganta" alt="Dashboard">
-        <img src="https://img.shields.io/badge/WandB-Dashboard-gold.svg" /></a>
+        <img src="https://img.shields.io/badge/Sweeps-Dashboard-gold.svg" /></a>
 </p>
 
 <p align="left">
@@ -151,7 +150,19 @@ python paras_flops.py -a {model_name}
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |ECANet-50|Mask RCNN|**34.1**|**53.4**|**37.0**|**21.1**|**37.2**|**42.9**|**31.4**|**50.6**|**33.2**|**18.1**|**34.3**|**41.1**|[Google Drive](https://drive.google.com/file/d/1IrxmSDDOzHKBJPkXYvCHNe-Koqm3Idtq/view?usp=sharing)|
 
+#### Download MS-COCO 2017:
+
+Simply execute [this script]() in your terminal to download and process the MS-COCO 2017 dataset. You can use the following command to do the same:
+```
+curl https://gist.githubusercontent.com/mkocabas/a6177fc00315403d31572e17700d7fd9/raw/a6ad5e9d7567187b65f222115dffcb4b8667e047/coco.sh | sh
+```
+
+
 #### Training:
+
+This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for training the Mask RCNN model. One would require to make the following changes in the following files in the cloned source of MMDetection codebase to train the detector model.
+
+- 
 
 #### Inference:
 
