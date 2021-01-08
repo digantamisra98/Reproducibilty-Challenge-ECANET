@@ -205,12 +205,12 @@ This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for t
     ```
     if self.planes == 64:
             self.eca = eca_layer(k_size = 3)
-        elif self.planes == 128:
-            self.eca = eca_layer(k_size = 5)
-        elif self.planes == 256:
-            self.eca = eca_layer(k_size = 5)
-        elif self.planes == 512:
-            self.eca = eca_layer(k_size = 7)
+    elif self.planes == 128:
+        self.eca = eca_layer(k_size = 5)
+    elif self.planes == 256:
+        self.eca = eca_layer(k_size = 5)
+    elif self.planes == 512:
+        self.eca = eca_layer(k_size = 7)
     ```
     
     *Note: This is done to ensure the backbone weights get loaded properly as ECANet-50 uses the input number of channels of the block <b>C</b> to predefine the kernel size for the 1D convolution filter in the ECA Module.*
@@ -235,12 +235,15 @@ python tools/train.py configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py --resume-fr
 
 #### Inference:
 
-<p>
-        <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
-        <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
-</p>
+To run inference, simply run [this notebook](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/blob/main/inference_demo.ipynb).
+*Although the authors provide the trained detector weights in their repository, they contain a lot of bugs which are described in this [open issue](https://github.com/BangguWu/ECANet/issues).*
 
 ##### Logs:
+
+The logs are provided in the [Logs folder](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/tree/main/logs). It contains two files:
+1. ```20210102_160817.log```: Contains logs from epoch 1 to epoch 6
+2. ```20210106_012255.log```: Contains logs from epoch 6 to epoch 12
+I restarted training from epoch 6 again since the lr was on 8 GPU setting while I was training on 1 GPU which caused nan loss at epoch 6, hence the two log files.
 
 ##### Machine Specifications and Software versions:
 
