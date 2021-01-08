@@ -17,3 +17,17 @@
 <p>
     <em>Bounding Box and Segmentation Maps of ECANet-50-Mask-RCNN using samples from the test set of MS-COCO 2017 dataset.</em>
 </p>
+
+# Introduction
+
+## Cite:
+
+```
+@InProceedings{Wang_2020_CVPR,
+author = {Wang, Qilong and Wu, Banggu and Zhu, Pengfei and Li, Peihua and Zuo, Wangmeng and Hu, Qinghua},
+title = {ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+}
+```
