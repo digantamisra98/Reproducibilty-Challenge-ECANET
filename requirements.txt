@@ -1,3 +1,4 @@
 wandb
 thop
 echoAI
+mmcv-full
