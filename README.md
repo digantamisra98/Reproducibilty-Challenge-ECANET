@@ -25,8 +25,8 @@
 ### CIFAR-10:
 
 <p float="center">
-    <img src="figures/acc.png" width="425" alt="Accuracy.">
-    <img src="figures/loss.png" width="425" alt="Loss.">
+    <img src="figures/acc.png" width="415" alt="Accuracy.">
+    <img src="figures/loss.png" width="415" alt="Loss.">
     <br>
     <em>Mean training curves of different attention mechanisms using ResNet-18 for CIFAR-10 training over 5 runs.</em>
 </p>
