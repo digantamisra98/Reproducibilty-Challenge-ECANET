@@ -158,14 +158,14 @@ curl https://gist.githubusercontent.com/mkocabas/a6177fc00315403d31572e17700d7fd
 ```
 #### Download Pretrained ImageNet Weights:
 
-Download the pretrained weights from the [original repository](https://github.com/BangguWu/ECANet). You can download them using `gdown` if you're on Colab or GCloud. For example to download the ECANet-50 weights, use the following command:
+Download the pretrained weights from the [original repository](https://github.com/BangguWu/ECANet). You can download them using `gdown` if you're on Colab or GCloud. For example to download the ECANet-50 weights for training a Mask RCNN, use the following command:
 
 ```
 pip install gdown
 gdown https://drive.google.com/u/0/uc?id=1670rce333c_lyMWFzBlNZoVUvtxbCF_U&export=download
 ```
 
-To make the weights compatible for MS-COCO training, run [this notebook](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/blob/main/Weight_correction.ipynb) and then move the processed weight file `eca_net.pth.tar` to a new folder named `weights` in mmdetection directory. 
+To make the weights compatible for MS-COCO training, run [this notebook](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/blob/main/Weight_correction.ipynb) and then move the processed weight file `eca_net.pth.tar` to a new folder named `weights` in mmdetection directory. Once done, edit the `model` dict variable in `mmdetection/configs/_base_/models/mask_rcnn_r50_fpn.py` by updating the `pretrained` parameter to ```pretrained='weights/eca_net.pth.tar'```. This will load the ECANet-50 backbone weights correctly. 
 
 #### Training:
 
