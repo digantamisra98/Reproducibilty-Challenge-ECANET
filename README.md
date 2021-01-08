@@ -13,9 +13,8 @@
 </p>
 
 <p align="center">
-  <img width="1000" src="figures/seg.png">
-</p>
-<p>
+    <img width="1000" src="figures/seg.png">
+    </br>
     <em>Bounding Box and Segmentation Maps of ECANet-50-Mask-RCNN using samples from the test set of MS-COCO 2017 dataset.</em>
 </p>
 
@@ -25,16 +24,28 @@
 
 ### CIFAR-10:
 
+<p float="center">
+    <img src="figures/acc.png" width="400" alt="Accuracy.">
+    <img src="figures/loss.png" width="400" alt="Loss.">
+    <br>
+    <em>Mean training curves of different attention mechanisms using ResNet-18 for CIFAR-10 training over 5 runs.</em>
+</p>
+
 ### Sweeps:
+
+<p align="left">
+    <img width="1000" src="figures/sweeps_run.png">
+    </br>
+    <em>Hyper-parameter sweep run on Weights & Biases using a ResNet-18 on CIFAR-10.</em>
+</p>
 
 ### ImageNet:
 
 ### MS-COCO:
 
 <p align="left">
-  <img width="500" src="figures/seg_ep.gif">
-</p>
-<p>
+    <img width="500" src="figures/seg_ep.gif">
+    <br>
     <em>Training progress of ECANet-50-Mask-RCNN for 12 epochs.</em>
 </p>
 
