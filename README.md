@@ -25,6 +25,8 @@
         <img src="https://img.shields.io/badge/WandB-Report1-yellow.svg" /></a>
     <a href="https://wandb.ai/diganta/ECANet-sweep/reports/Efficient-Channel-Attention--VmlldzozNzgwOTE" alt="Report">
         <img src="https://img.shields.io/badge/WandB-Report2-yellow.svg" /></a>
+    <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
+        <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 </p>
 
 <p align="center">
@@ -81,3 +83,7 @@ month = {June},
 year = {2020}
 }
 ```
+
+<p align="center">
+    Made with ❤️ and ⚡
+</p>
