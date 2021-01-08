@@ -83,6 +83,8 @@ pip install -e "/path_to_Echo/"
     <em>Mean training curves of different attention mechanisms using ResNet-18 for CIFAR-10 training over 5 runs.</em>
 </p>
 
+Using the above linked colab notebook, you can run comparative runs for different attention mechanisms on CIFAR-10 using ResNets. You can add your own attention mechanisms by adding them in the source of Echo package.
+
 ### Sweeps:
 
 <p>
@@ -97,6 +99,8 @@ pip install -e "/path_to_Echo/"
     </br>
     <em>Hyper-parameter sweep run on Weights & Biases using a ResNet-18 on CIFAR-10.</em>
 </p>
+
+To run hyperparamter sweeps on [WandB](https://wandb.ai/site), simply run the above linked colab notebook. To add more hyperparameters, simply edit the `sweep.yaml` file present in `sweep` folder.
 
 ### ImageNet:
 
