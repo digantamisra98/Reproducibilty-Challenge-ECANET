@@ -27,6 +27,8 @@
         <img src="https://img.shields.io/badge/WandB-Report2-yellow.svg" /></a>
     <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+    <a href="https://github.com/BangguWu/ECANet" alt="Report">
+        <img src="https://img.shields.io/badge/Official-Repository-black.svg" /></a>
 </p>
 
 <p align="center">
@@ -42,6 +44,8 @@
     <br>
     <em>Structural comparison of SE and ECA attention mechanism.</em>
 </p>
+
+Efficient Channel Attention (ECA) is a simple efficient extension of the popular Squeeze-and-Excitation Attention Mechanism, which is based on the foundation concept of Local Cross Channel Interaction (CCI). Instead of using fully-connected layers with reduction ratio bottleneck as in the case of SENets, ECANet uses an adaptive shared (across channels) 1D convolution kernel on the downsampled GAP *C* x 1 x 1 tensor. ECA is an equivalently plug and play module similar to SE attention mechanism and can be added anywhere in the blocks of a deep convolutional neural networks. Because of the shared 1D kernel, the parameter overhead and FLOPs cost added by ECA is significantly lower than that of SENets while achieving similar or superior performance owing to it's capabilities of constructing adaptive kernels. This work was accepted at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020. 
 
 ## How to run:
 
