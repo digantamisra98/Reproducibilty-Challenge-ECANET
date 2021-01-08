@@ -49,6 +49,10 @@ Efficient Channel Attention (ECA) is a simple efficient extension of the popular
 
 ## How to run:
 
+#### Install Dependencies:
+
+```pip install -r requirements.txt```
+
 ### CIFAR-10:
 
 <p float="center">
@@ -68,19 +72,18 @@ Efficient Channel Attention (ECA) is a simple efficient extension of the popular
 
 ### ImageNet:
 
-
-The Triplet Attention layer is implemented in `triplet_attention.py`. Since triplet attention is a dimentionality-preserving module, it can be inserted between convolutional layers in most stages of most networks. We recommend using the model definition provided here with our [imagenet training repo](https://github.com/LandskapeAI/imagenet) to use the fastest and most up-to-date training scripts.
+ECA layer is implemented in [eca_module.py](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/blob/main/models/eca_module.py). Since ECA is a dimentionality-preserving module, it can be inserted between convolutional layers in most stages of most networks. We recommend using the model definition provided here with our [imagenet training repo](https://github.com/LandskapeAI/imagenet) to use the fastest and most up-to-date training scripts along with detailed instructions on how to download and prepare dataset.
 
 #### Train with ResNet
 
 You can run the `main.py` to train or evaluate as follow:
 
 ```
-CUDA_VISIBLE_DEVICES={device_ids} python main -a {model_name} --ksize {eca_kernel_size} {the path of you datasets}
+CUDA_VISIBLE_DEVICES={device_ids} python main -a {model_name} --project {WandB Project Name} {the path of you datasets}
 ```
 For example:
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python main -a eca_resnet50 --ksize 3557 ./datasets/ILSVRC2012/images
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main -a eca_resnet50 --project ECANet_RC2020 ./datasets/ILSVRC2012/images
 ```
 
 #### Train with MobileNet_v2
@@ -92,6 +95,16 @@ If you have install [thop](https://github.com/Lyken17/pytorch-OpCounter), you ca
 python paras_flops.py -a {model_name}
 ```
 
+##### Official Results: 
+
+|Model|Param.|FLOPs|Top-1(%)|Top-5(%)|
+|:---:|:----:|:---:|:------:|:------:|
+|ECA-Net18|11.15M|1.70G|70.92|89.93|
+|ECA-Net34|20.79M|3.43G|74.21|91.83|
+|ECA-Net50|24.37M|3.86G|77.42|93.62|
+|ECA-Net101|42.49M|7.35G|78.65|94.34|
+|ECA-Net152|57.41M|10.83G|78.92|94.55|
+|ECA-MobileNet_v2|3.34M|319.9M|72.56|90.81||
 
 ### MS-COCO:
 
@@ -100,6 +113,8 @@ python paras_flops.py -a {model_name}
     <br>
     <em>Training progress of ECANet-50-Mask-RCNN for 12 epochs.</em>
 </p>
+
+##### Reproduced Results:
 
 |Backbone|Detectors|BBox_AP|BBox_AP<sub>50</sub>|BBox_AP<sub>75</sub>|BBox_AP<sub>S</sub>|BBox_AP<sub>M</sub>|BBox_AP<sub>L</sub>|Segm_AP|Segm_AP<sub>50</sub>|Segm_AP<sub>75</sub>|Segm_AP<sub>S</sub>|Segm_AP<sub>M</sub>|Segm_AP<sub>L</sub>|Weights|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
