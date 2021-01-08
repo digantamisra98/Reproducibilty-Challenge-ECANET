@@ -25,8 +25,6 @@
         <img src="https://img.shields.io/badge/WandB-Report1-yellow.svg" /></a>
     <a href="https://wandb.ai/diganta/ECANet-sweep/reports/Efficient-Channel-Attention--VmlldzozNzgwOTE" alt="Report">
         <img src="https://img.shields.io/badge/WandB-Report2-yellow.svg" /></a>
-    <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
-        <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
     <a href="https://github.com/BangguWu/ECANet" alt="Report">
         <img src="https://img.shields.io/badge/Official-Repository-black.svg" /></a>
 </p>
@@ -74,6 +72,11 @@ pip install -e "/path_to_Echo/"
 
 ### CIFAR-10:
 
+<p>
+        <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
+        <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+</p>
+
 <p float="center">
     <img src="figures/acc.png" width="415" alt="Accuracy.">
     <img src="figures/loss.png" width="415" alt="Loss.">
@@ -82,6 +85,11 @@ pip install -e "/path_to_Echo/"
 </p>
 
 ### Sweeps:
+
+<p>
+        <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
+        <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+</p>
 
 <p align="left">
     <img width="1000" src="figures/sweeps_run.png">
@@ -142,6 +150,11 @@ python paras_flops.py -a {model_name}
 #### Training:
 
 #### Inference:
+
+<p>
+        <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
+        <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+</p>
 
 ## Cite:
 
