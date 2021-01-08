@@ -245,6 +245,10 @@ The logs are provided in the [Logs folder](https://github.com/digantamisra98/Rep
 2. ```20210106_012255.log```: Contains logs from epoch 6 to epoch 12
 I restarted training from epoch 6 again since the lr was on 8 GPU setting while I was training on 1 GPU which caused nan loss at epoch 6, hence the two log files.
 
+## WandB logs:
+
+The dashboard for this project can be accessed [here](https://wandb.ai/diganta/ECANet-sweep?workspace=user-diganta).
+
 ##### Machine Specifications and Software versions:
 
 - torch: 1.7.1+cu110
