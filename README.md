@@ -6,10 +6,11 @@
         <img src="http://hits.dwyl.io/digantamisra98/Reproducibilty-Challenge-ECANET.svg" /></a>
     <a href="https://arxiv.org/abs/1910.03151" alt="ArXiv">
         <img src="https://img.shields.io/badge/Paper-arXiv-blue.svg" /></a>
+    <a href="https://mybinder.org/v2/gh/digantamisra98/Reproducibilty-Challenge-ECANET/HEAD" alt="ArXiv">
+        <img src="https://mybinder.org/badge_logo.svg" /></a>
      <a href="https://twitter.com/DigantaMisra1" alt="Twitter">
           <img src="https://img.shields.io/twitter/url/https/twitter.com/DigantaMisra1.svg?style=social&label=Follow%20%40DigantaMisra1" /></a>
 </p>
-
 
 <p align="center">
   <img width="1000" src="figures/seg.png">
