@@ -21,6 +21,23 @@
 
 # Introduction
 
+## How to run:
+
+### CIFAR-10:
+
+### Sweeps:
+
+### ImageNet:
+
+### MS-COCO:
+
+<p align="left">
+  <img width="500" src="figures/seg_ep.gif">
+</p>
+<p>
+    <em>Training progress of ECANet-50-Mask-RCNN for 12 epochs.</em>
+</p>
+
 ## Cite:
 
 ```
