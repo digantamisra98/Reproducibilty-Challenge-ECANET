@@ -21,6 +21,10 @@
           <img src="https://img.shields.io/twitter/url/https/twitter.com/DigantaMisra1.svg?style=social&label=Follow%20%40DigantaMisra1" /></a>
     <a href="https://wandb.ai/diganta/ECANet-sweep?workspace=user-diganta" alt="Dashboard">
         <img src="https://img.shields.io/badge/WandB-Dashboard-gold.svg" /></a>
+    <a href="https://wandb.ai/diganta/ECANet-sweep/reports/ECA-Net-Efficient-Channel-Attention-for-Deep-Convolutional-Neural-Networks-NeurIPS-Reproducibility-Challenge-2020--VmlldzozODU0NTM" alt="RC2020">
+        <img src="https://img.shields.io/badge/WandB-Report1-yellow.svg" /></a>
+    <a href="https://wandb.ai/diganta/ECANet-sweep/reports/Efficient-Channel-Attention--VmlldzozNzgwOTE" alt="Report">
+        <img src="https://img.shields.io/badge/WandB-Report2-yellow.svg" /></a>
 </p>
 
 <p align="center">
