@@ -233,7 +233,7 @@ After making the following changes to run the training, use the following comman
 python tools/train.py mmdetection/configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py
 ```
 
-To resume training from any checkpoint, use the following command (for example - Epoch 5 in this case:
+To resume training from any checkpoint, use the following command (for example - Epoch 5 in this case):
 ```
 python tools/train.py configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py --resume-from work_dirs/mask_rcnn_r50_fpn_1x_coco/epoch_5.pth
 ```
