@@ -51,7 +51,16 @@ Efficient Channel Attention (ECA) is a simple efficient extension of the popular
 
 #### Install Dependencies:
 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
+
+This reproduction is build on PyTorch and MMDetection. Ensure you have CUDA Toolkit > 10.1 installed. For more details regarding installation of MMDetection, please visit this [resources page](https://mmdetection.readthedocs.io/en/latest/get_started.html#installation).
+
+If ```pip install mmcv-full``` takes a lot of time or fails, use the following line (customize the torch and cuda versions as per your requirements):
+```
+!pip install mmcv-full==latest+torch1.7.0+cu101 -f https://download.openmmlab.com/mmcv/dist/index.html
+```
 
 ### CIFAR-10:
 
@@ -119,6 +128,10 @@ python paras_flops.py -a {model_name}
 |Backbone|Detectors|BBox_AP|BBox_AP<sub>50</sub>|BBox_AP<sub>75</sub>|BBox_AP<sub>S</sub>|BBox_AP<sub>M</sub>|BBox_AP<sub>L</sub>|Segm_AP|Segm_AP<sub>50</sub>|Segm_AP<sub>75</sub>|Segm_AP<sub>S</sub>|Segm_AP<sub>M</sub>|Segm_AP<sub>L</sub>|Weights|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |ECANet-50|Mask RCNN|**34.1**|**53.4**|**37.0**|**21.1**|**37.2**|**42.9**|**31.4**|**50.6**|**33.2**|**18.1**|**34.3**|**41.1**|[Google Drive](https://drive.google.com/file/d/1IrxmSDDOzHKBJPkXYvCHNe-Koqm3Idtq/view?usp=sharing)|
+
+#### Training:
+
+#### Inference:
 
 ## Cite:
 
