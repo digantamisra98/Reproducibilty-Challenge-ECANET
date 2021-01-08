@@ -2,22 +2,25 @@
 <p align="center">CVPR 2020 <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.html" target="_blank">(Official Paper)</a></p>
 
 <p align="center">
+    <img src="https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/acbadge.gif" width = 20 />
     <a href="http://hits.dwyl.io/digantamisra98/Reproducibilty-Challenge-ECANET" alt="HitCount">
         <img src="http://hits.dwyl.io/digantamisra98/Reproducibilty-Challenge-ECANET.svg" /></a>
     <a href="https://arxiv.org/abs/1910.03151" alt="ArXiv">
         <img src="https://img.shields.io/badge/Paper-arXiv-blue.svg" /></a>
-    <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.html" alt="CVF">
+    <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.html"                     alt="CVF">
           <img src="https://img.shields.io/badge/CVF-Page-purple.svg" /></a>
-  <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.pdf" alt="PDF">
+    <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.pdf"                        alt="PDF">
           <img src="https://img.shields.io/badge/CVPR-PDF-neon.svg" /></a>
-  <a href="https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_ECA-Net_Efficient_Channel_CVPR_2020_supplemental.pdf" alt="Supp">
+    <a href="https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_ECA-Net_Efficient_Channel_CVPR_2020_supplemental.pdf" alt="Supp">
           <img src="https://img.shields.io/badge/CVPR-Supp-pink.svg" /></a>
-  <a href="https://www.youtube.com/watch?v=ipZ2AS1b0rI" alt="Video">
+    <a href="https://www.youtube.com/watch?v=ipZ2AS1b0rI" alt="Video">
           <img src="https://img.shields.io/badge/CVPR-Video-maroon.svg" /></a>
     <a href="https://mybinder.org/v2/gh/digantamisra98/Reproducibilty-Challenge-ECANET/HEAD" alt="ArXiv">
         <img src="https://mybinder.org/badge_logo.svg" /></a>
-     <a href="https://twitter.com/DigantaMisra1" alt="Twitter">
+    <a href="https://twitter.com/DigantaMisra1" alt="Twitter">
           <img src="https://img.shields.io/twitter/url/https/twitter.com/DigantaMisra1.svg?style=social&label=Follow%20%40DigantaMisra1" /></a>
+    <a href="https://wandb.ai/diganta/ECANet-sweep?workspace=user-diganta" alt="Dashboard">
+        <img src="https://img.shields.io/badge/WandB-Dashboard-gold.svg" /></a>
 </p>
 
 <p align="center">
