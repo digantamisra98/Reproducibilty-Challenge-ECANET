@@ -219,6 +219,19 @@ This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for t
     ```
     out = self.eca(out)
     ```
+    
+- `mmdetection/configs/_base_/schedules/schedule_1x.py`
+    If you're training on 1 GPU, you would require to lower down the LR for the scheduler since MMDetection default LR strategy is set for 8 GPU based training. Simply go to this file and edit the optimizer definition with the lr value now being `0.0025`.
+
+After making the following changes to run the training, use the following command:
+```
+python tools/train.py mmdetection/configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py
+```
+
+To resume training from any checkpoint, use the following command (for example - Epoch 5 in this case:
+```
+python tools/train.py configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py --resume-from work_dirs/mask_rcnn_r50_fpn_1x_coco/epoch_5.pth
+```
 
 #### Inference:
 
@@ -226,6 +239,13 @@ This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for t
         <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 </p>
+
+##### Logs:
+
+##### Machine Specifications and Software versions:
+
+- torch: 1.7.1+cu110
+- GPU: 1 NVIDA V100, 16GB Memory on GCP
 
 ## Cite:
 
