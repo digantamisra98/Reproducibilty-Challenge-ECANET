@@ -169,9 +169,56 @@ To make the weights compatible for MS-COCO training, run [this notebook](https:/
 
 #### Training:
 
-This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for training the Mask RCNN model. One would require to make the following changes in the following files in the cloned source of MMDetection codebase to train the detector model.
+This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for training the Mask RCNN model. One would require to make the following changes in the following file in the cloned source of MMDetection codebase to train the detector model.
 
-- 
+- `mmdetection/mmdet/models/backbones/resnet.py`:
+    All that requires to be done now is to modify the source backbone code to convert it into ECA based backbone. For this case, the backbone is ECANet-50 and the detector is Mask-RCNN. Simply go to this file and add the original class definition of ECA Module which is:
+    
+    ```
+    class eca_layer(nn.Module):
+    """Constructs a ECA module.
+    Args:
+        channel: Number of channels of the input feature map
+        k_size: Adaptive selection of kernel size
+    """
+    def __init__(self, k_size=3):
+        super(eca_layer, self).__init__()
+        self.avg_pool = nn.AdaptiveAvgPool2d(1)
+        self.conv = nn.Conv1d(1, 1, kernel_size=k_size, padding=(k_size - 1) // 2, bias=False) 
+        self.sigmoid = nn.Sigmoid()
+
+    def forward(self, x):
+        # feature descriptor on the global spatial information
+        y = self.avg_pool(x)
+
+        # Two different branches of ECA module
+        y = self.conv(y.squeeze(-1).transpose(-1, -2)).transpose(-1, -2).unsqueeze(-1)
+
+        # Multi-scale information fusion
+        y = self.sigmoid(y)
+
+        return x * y.expand_as(x)
+    ```
+    
+    Once done, in the `__init__` function of class `Bottleneck`, add the following code lines:
+    
+    ```
+    if self.planes == 64:
+            self.eca = eca_layer(k_size = 3)
+        elif self.planes == 128:
+            self.eca = eca_layer(k_size = 5)
+        elif self.planes == 256:
+            self.eca = eca_layer(k_size = 5)
+        elif self.planes == 512:
+            self.eca = eca_layer(k_size = 7)
+    ```
+    
+    *Note: This is done to ensure the backbone weights get loaded properly as ECANet-50 uses the input number of channels of the block <b>C</b> to predefine the kernel size for the 1D convolution filter in the ECA Module.*
+    
+    Lastly, just add the following line to the `forward` pass/ function of the same class right after the final conv + normalization layer:
+    ```
+    out = self.eca(out)
+    ```
 
 #### Inference:
 
