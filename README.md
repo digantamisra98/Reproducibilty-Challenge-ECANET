@@ -3,8 +3,8 @@
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/acbadge.gif" width = 20 />
-    <a href="http://hits.dwyl.io/digantamisra98/Reproducibilty-Challenge-ECANET" alt="HitCount">
-        <img src="http://hits.dwyl.io/digantamisra98/Reproducibilty-Challenge-ECANET.svg" /></a>
+    <a href="http://hits.dwyl.com/digantamisra98/Reproducibilty-Challenge-ECANET" alt="HitCount">
+        <img src="http://hits.dwyl.com/digantamisra98/Reproducibilty-Challenge-ECANET.svg" /></a>
     <a href="https://arxiv.org/abs/1910.03151" alt="ArXiv">
         <img src="https://img.shields.io/badge/Paper-arXiv-blue.svg" /></a>
     <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.html"                     alt="CVF">
