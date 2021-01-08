@@ -152,11 +152,20 @@ python paras_flops.py -a {model_name}
 
 #### Download MS-COCO 2017:
 
-Simply execute [this script]() in your terminal to download and process the MS-COCO 2017 dataset. You can use the following command to do the same:
+Simply execute [this script](https://gist.githubusercontent.com/mkocabas/a6177fc00315403d31572e17700d7fd9/raw/a6ad5e9d7567187b65f222115dffcb4b8667e047/coco.sh) in your terminal to download and process the MS-COCO 2017 dataset. You can use the following command to do the same:
 ```
 curl https://gist.githubusercontent.com/mkocabas/a6177fc00315403d31572e17700d7fd9/raw/a6ad5e9d7567187b65f222115dffcb4b8667e047/coco.sh | sh
 ```
+#### Download Pretrained ImageNet Weights:
 
+Download the pretrained weights from the [original repository](https://github.com/BangguWu/ECANet). You can download them using `gdown` if you're on Colab or GCloud. For example to download the ECANet-50 weights, use the following command:
+
+```
+pip install gdown
+gdown https://drive.google.com/u/0/uc?id=1670rce333c_lyMWFzBlNZoVUvtxbCF_U&export=download
+```
+
+To make the weights compatible for MS-COCO training, run [this notebook](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/blob/main/Weight_correction.ipynb) and then move the processed weight file `eca_net.pth.tar` to a new folder named `weights` in mmdetection directory. 
 
 #### Training:
 
