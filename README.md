@@ -62,6 +62,16 @@ If ```pip install mmcv-full``` takes a lot of time or fails, use the following l
 !pip install mmcv-full==latest+torch1.7.0+cu101 -f https://download.openmmlab.com/mmcv/dist/index.html
 ```
 
+Although [Echo] can be installed pip, the features we currently use in this project aren't available in the latest pip version. So it's advisable to rather install from source by the following commands and then clone this repository within the directory where Echo source is present and installed in your environment/local/instance:
+
+```
+import os
+git clone https://github.com/digantamisra98/Echo.git
+os.chdir("/path_to_Echo")
+git clone https://github.com/digantamisra98/ECANet.git
+pip install -e "/path_to_Echo/"
+```
+
 ### CIFAR-10:
 
 <p float="center">
