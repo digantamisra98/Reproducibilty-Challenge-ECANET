@@ -57,7 +57,7 @@ This reproduction is build on PyTorch and MMDetection. Ensure you have CUDA Tool
 
 If ```pip install mmcv-full``` takes a lot of time or fails, use the following line (customize the torch and cuda versions as per your requirements):
 ```
-!pip install mmcv-full==latest+torch1.7.0+cu101 -f https://download.openmmlab.com/mmcv/dist/index.html
+pip install mmcv-full==latest+torch1.7.0+cu101 -f https://download.openmmlab.com/mmcv/dist/index.html
 ```
 
 Although [Echo] can be installed pip, the features we currently use in this project aren't available in the latest pip version. So it's advisable to rather install from source by the following commands and then clone this repository within the directory where Echo source is present and installed in your environment/local/instance:
