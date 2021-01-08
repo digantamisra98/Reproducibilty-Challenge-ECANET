@@ -101,6 +101,8 @@ pip install -e "/path_to_Echo/"
 
 ### ImageNet:
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eca-net-efficient-channel-attention-for-deep/image-classification-on-imagenet)](https://paperswithcode.com/sota/image-classification-on-imagenet?p=eca-net-efficient-channel-attention-for-deep)
+
 ECA layer is implemented in [eca_module.py](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/blob/main/models/eca_module.py). Since ECA is a dimentionality-preserving module, it can be inserted between convolutional layers in most stages of most networks. We recommend using the model definition provided here with our [imagenet training repo](https://github.com/LandskapeAI/imagenet) to use the fastest and most up-to-date training scripts along with detailed instructions on how to download and prepare dataset.
 
 #### Train with ResNet
