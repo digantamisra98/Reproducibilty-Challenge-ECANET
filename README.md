@@ -20,6 +20,12 @@
 
 # Introduction
 
+<p float="center">
+    <img src="figures/eca_module.jpg" width="1000" alt="Struct.">
+    <br>
+    <em>Structural comparison of SE and ECA attention mechanism.</em>
+</p>
+
 ## How to run:
 
 ### CIFAR-10:
