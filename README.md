@@ -89,6 +89,8 @@ pip install -e "/path_to_Echo/"
 <p>
         <a href="https://colab.research.google.com/drive/1PHG4u_mkOnbge4RIzPjtfda1N-oiaDKI?usp=sharing" alt="Colab">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+        <a href="https://wandb.ai/diganta/ECANet-sweep/sweeps/z61h01i4?workspace=user-diganta" alt="Dashboard">
+        <img src="https://img.shields.io/badge/WandB-Dashboard-gold.svg" /></a>
 </p>
 
 <p align="left">
