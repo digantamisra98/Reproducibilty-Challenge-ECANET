@@ -230,7 +230,7 @@ This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for t
 
 After making the following changes to run the training, use the following command:
 ```
-python tools/train.py mmdetection/configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py
+python tools/train.py configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py
 ```
 
 To resume training from any checkpoint, use the following command (for example - Epoch 5 in this case):
