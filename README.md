@@ -240,6 +240,8 @@ python tools/train.py configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py --resume-fr
 
 #### Inference:
 
+*Note: MMDetection has significantly changed since and hence this notebook would be incompatible with the latest version.*
+
 To run inference, simply run [this notebook](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/blob/main/inference_demo.ipynb).
 *Although the authors provide the trained detector weights in their repository, they contain a lot of bugs which are described in this [open issue](https://github.com/BangguWu/ECANet/issues/47).*
 
