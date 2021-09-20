@@ -6,18 +6,18 @@ import shutil
 import time
 import warnings
 
+import models
 import torch
-import torch.nn as nn
-import torch.nn.parallel
 import torch.backends.cudnn as cudnn
 import torch.distributed as dist
+import torch.nn as nn
+import torch.nn.parallel
 import torch.optim
 import torch.utils.data
 import torch.utils.data.distributed
-import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 import torchvision.models as models
-import models
+import torchvision.transforms as transforms
 from thop import profile
 
 model_names = sorted(name for name in models.__dict__
